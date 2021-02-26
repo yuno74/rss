@@ -1,0 +1,4 @@
+pyrogram
+feedparser
+apscheduler
+pickledb
