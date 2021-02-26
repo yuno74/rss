@@ -17,13 +17,15 @@ A bot to post messages to Telegram Groups or Channels from rss feed.
 ### Deployment
 - Install requirements from [requirements.txt](./requirements.txt)
 ```
-pip3 install requirements.txt
+cd rss
+sudo pip3 install virtualenv
+virtualenv -p python3 VENV
+. ./VENV/bin/activate
+pip3 install -r requirements.txt
+nohup python3 rss.py
 ```
 - Deploy
 ```
 python3 rss.py
-```
 
-## Copyright & License
-- Copyright (©) 2021 by [Adnan Ahmad](https://github.com/viperadnan-git)
-- Licensed under the terms of the [GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007](./LICENSE)
+```
